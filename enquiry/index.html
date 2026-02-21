@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Enquiry Lucknow | Get Free Quote - Lucknow24Events</title>
+    <meta name="description" content="Send enquiry for event management in Lucknow. Get free quote for weddings, parties, corporate events. Quick response within 30 minutes.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        
+        .enquiry-option {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .enquiry-option:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.15);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="bg-black/30 backdrop-blur-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="https://lucknow24events.com" class="text-2xl font-bold text-white">
+                    <i class="fas fa-arrow-left mr-2 text-purple-400"></i> Back to Main Site
+                </a>
+                <div class="text-white">
+                    <span class="bg-blue-600 px-4 py-2 rounded-full text-sm">
+                        <i class="fas fa-question-circle mr-1"></i> Enquiry
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-12">
+        <h1 class="text-5xl md:text-6xl font-bold text-center text-white mb-4">
+            Quick <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Enquiry</span>
+        </h1>
+        <p class="text-gray-400 text-center mb-12 max-w-3xl mx-auto">
+            Have questions? Get answers within 30 minutes
+        </p>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Enquiry Form -->
+            <div class="glassmorphism p-8">
+                <h2 class="text-2xl font-bold text-white mb-6">Send Your Enquiry</h2>
+                
+                <form id="enquiryForm" class="space-y-6">
+                    <div>
+                        <label class="block text-white mb-2">Your Name *</label>
+                        <input type="text" id="enquiryName" class="w-full bg-white/10 border border-white/20 rounded-lg px-6 py-4 text-white" required>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-white mb-2">Phone Number *</label>
+                        <input type="tel" id="enquiryPhone" class="w-full bg-white/10 border border-white/20 rounded-lg px-6 py-4 text-white" required>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-white mb-2">Email Address</label>
+                        <input type="email" id="enquiryEmail" class="w-full bg-white/10 border border-white/20 rounded-lg px-6 py-4 text-white">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-white mb-2">Enquiry Type *</label>
+                        <select id="enquiryType" class="w-full bg-white/10 border border-white/20 rounded-lg px-6 py-4 text-white" required>
+                            <option value="">Select Type</option>
+                            <option value="Wedding">Wedding Enquiry</option>
+                            <option value="Corporate">Corporate Event</option>
+                            <option value="Birthday">Birthday Party</option>
+                            <option value="Pricing">Pricing Information</option>
+                            <option value="Availability">Venue Availability</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-white mb-2">Your Message *</label>
+                        <textarea id="enquiryMessage" rows="5" class="w-full bg-white/10 border border-white/20 rounded-lg px-6 py-4 text-white" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 rounded-lg font-semibold hover:shadow-lg transition">
+                        Send Enquiry
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="space-y-6">
+                <div class="glassmorphism p-8">
+                    <h2 class="text-2xl font-bold text-white mb-6">Quick Contact</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-purple-600/30 rounded-full flex items-center justify-center">
+                                <i class="fas fa-phone text-purple-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">Call Us Now</p>
+                                <p class="text-white text-xl font-semibold">+91 99999 99999</p>
+                                <p class="text-white">+91 88888 88888</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-green-600/30 rounded-full flex items-center justify-center">
+                                <i class="fab fa-whatsapp text-green-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">WhatsApp</p>
+                                <p class="text-white text-xl font-semibold">+91 99999 99999</p>
+                                <p class="text-gray-300 text-sm">Reply within 5 minutes</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-blue-600/30 rounded-full flex items-center justify-center">
+                                <i class="fas fa-envelope text-blue-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">Email</p>
+                                <p class="text-white text-xl font-semibold">info@lucknow24events.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-red-600/30 rounded-full flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-red-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">Office Address</p>
+                                <p class="text-white">123, Hazratganj, Lucknow - 226001</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQs -->
+                <div class="glassmorphism p-8">
+                    <h2 class="text-2xl font-bold text-white mb-4">Frequently Asked Questions</h2>
+                    
+                    <div class="space-y-4">
+                        <details class="bg-white/5 p-4 rounded-lg">
+                            <summary class="text-white font-semibold cursor-pointer">What areas of Lucknow do you serve?</summary>
+                            <p class="text-gray-400 mt-2">We serve all areas of Lucknow including Hazratganj, Gomti Nagar, Alambagh, Chowk, Indiranagar, and all other locations.</p>
+                        </details>
+                        
+                        <details class="bg-white/5 p-4 rounded-lg">
+                            <summary class="text-white font-semibold cursor-pointer">How quickly do you respond?</summary>
+                            <p class="text-gray-400 mt-2">We respond to all enquiries within 30 minutes during business hours.</p>
+                        </details>
+                        
+                        <details class="bg-white/5 p-4 rounded-lg">
+                            <summary class="text-white font-semibold cursor-pointer">Do you provide staff for events?</summary>
+                            <p class="text-gray-400 mt-2">Yes, we have 200+ professional staff members including waiters, coordinators, and managers.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const SUPABASE_URL = 'https://eibvlmsgprvwoetoqffa.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVpYnZsbXNncHJ2d29ldG9xZmZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE2NjMzODMsImV4cCI6MjA4NzIzOTM4M30.YVEGGX0nNE-S_0Nksd-H8GI1ejdx-sS2ZRHiMf6xMjw';
+        const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+        
+        document.getElementById('enquiryForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const enquiryData = {
+                name: document.getElementById('enquiryName').value,
+                phone: document.getElementById('enquiryPhone').value,
+                email: document.getElementById('enquiryEmail').value,
+                enquiry_type: document.getElementById('enquiryType').value,
+                message: document.getElementById('enquiryMessage').value,
+                location: 'Lucknow',
+                created_at: new Date().toISOString(),
+                status: 'New'
+            };
+            
+            try {
+                const { data, error } = await supabase
+                    .from('enquiries')
+                    .insert(enquiryData);
+                
+                if (error) throw error;
+                
+                alert('Enquiry sent successfully! We will contact you soon.');
+                this.reset();
+                
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error sending enquiry. Please call us directly.');
+            }
+        });
+    </script>
+</body>
+</html>

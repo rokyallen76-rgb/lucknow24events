@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs in Lucknow | Event Management Careers - Lucknow24Events</title>
+    <meta name="description" content="Find event management jobs in Lucknow. Hiring event planners, coordinators, waiters, and more. Join Lucknow's best event team.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        
+        .job-card {
+            transition: all 0.3s ease;
+        }
+        
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        .location-badge {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="bg-black/30 backdrop-blur-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="https://lucknow24events.com" class="text-2xl font-bold text-white">
+                    <i class="fas fa-arrow-left mr-2 text-purple-400"></i> Back to Main Site
+                </a>
+                <div class="text-white">
+                    <span class="bg-green-600 px-4 py-2 rounded-full text-sm">
+                        <i class="fas fa-briefcase mr-1"></i> Jobs in Lucknow
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-12">
+        <h1 class="text-5xl md:text-6xl font-bold text-center text-white mb-4">
+            Careers at <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Lucknow24Events</span>
+        </h1>
+        <p class="text-gray-400 text-center mb-8 max-w-3xl mx-auto">
+            Join Lucknow's fastest growing event management team. We're hiring passionate individuals.
+        </p>
+        
+        <!-- Stats -->
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="glassmorphism p-6 text-center">
+                <div class="text-3xl font-bold text-purple-400 mb-2">50+</div>
+                <div class="text-gray-300">Team Members</div>
+            </div>
+            <div class="glassmorphism p-6 text-center">
+                <div class="text-3xl font-bold text-green-400 mb-2">12</div>
+                <div class="text-gray-300">Open Positions</div>
+            </div>
+            <div class="glassmorphism p-6 text-center">
+                <div class="text-3xl font-bold text-yellow-400 mb-2">100%</div>
+                <div class="text-gray-300">Local Hiring</div>
+            </div>
+        </div>
+        
+        <!-- Job Listings -->
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <!-- Event Manager -->
+            <div class="glassmorphism p-8 job-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-2xl font-bold text-white">Event Manager</h3>
+                    <span class="location-badge">
+                        <i class="fas fa-map-marker-alt text-red-400"></i> Lucknow
+                    </span>
+                </div>
+                <p class="text-gray-300 mb-4">Lead our event team and manage premium events in Lucknow.</p>
+                <div class="space-y-2 mb-6">
+                    <p class="text-gray-400"><i class="fas fa-rupee-sign text-green-400 mr-2"></i> ₹25,000 - ₹40,000/month</p>
+                    <p class="text-gray-400"><i class="fas fa-briefcase text-blue-400 mr-2"></i> 2+ years experience</p>
+                    <p class="text-gray-400"><i class="fas fa-graduation-cap text-yellow-400 mr-2"></i> Graduate in any field</p>
+                </div>
+                <button onclick="applyForJob('Event Manager')" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition">
+                    Apply Now
+                </button>
+            </div>
+            
+            <!-- Wedding Coordinator -->
+            <div class="glassmorphism p-8 job-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-2xl font-bold text-white">Wedding Coordinator</h3>
+                    <span class="location-badge">
+                        <i class="fas fa-map-marker-alt text-red-400"></i> Lucknow
+                    </span>
+                </div>
+                <p class="text-gray-300 mb-4">Coordinate weddings at various venues across Lucknow.</p>
+                <div class="space-y-2 mb-6">
+                    <p class="text-gray-400"><i class="fas fa-rupee-sign text-green-400 mr-2"></i> ₹18,000 - ₹30,000/month</p>
+                    <p class="text-gray-400"><i class="fas fa-briefcase text-blue-400 mr-2"></i> 1+ year experience</p>
+                    <p class="text-gray-400"><i class="fas fa-heart text-red-400 mr-2"></i> Passion for weddings</p>
+                </div>
+                <button onclick="applyForJob('Wedding Coordinator')" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition">
+                    Apply Now
+                </button>
+            </div>
+            
+            <!-- Professional Waiters -->
+            <div class="glassmorphism p-8 job-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-2xl font-bold text-white">Professional Waiters</h3>
+                    <span class="location-badge">
+                        <i class="fas fa-map-marker-alt text-red-400"></i> Lucknow
+                    </span>
+                </div>
+                <p class="text-gray-300 mb-4">Serve at premium events and parties in Lucknow.</p>
+                <div class="space-y-2 mb-6">
+                    <p class="text-gray-400"><i class="fas fa-rupee-sign text-green-400 mr-2"></i> ₹12,000 - ₹18,000/month</p>
+                    <p class="text-gray-400"><i class="fas fa-clock text-blue-400 mr-2"></i> Flexible shifts</p>
+                    <p class="text-gray-400"><i class="fas fa-utensils text-yellow-400 mr-2"></i> Training provided</p>
+                </div>
+                <button onclick="applyForJob('Professional Waiter')" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition">
+                    Apply Now
+                </button>
+            </div>
+            
+            <!-- Event Assistant -->
+            <div class="glassmorphism p-8 job-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-2xl font-bold text-white">Event Assistant</h3>
+                    <span class="location-badge">
+                        <i class="fas fa-map-marker-alt text-red-400"></i> Lucknow
+                    </span>
+                </div>
+                <p class="text-gray-300 mb-4">Support our event team in setup and execution.</p>
+                <div class="space-y-2 mb-6">
+                    <p class="text-gray-400"><i class="fas fa-rupee-sign text-green-400 mr-2"></i> ₹10,000 - ₹15,000/month</p>
+                    <p class="text-gray-400"><i class="fas fa-clock text-blue-400 mr-2"></i> Freshers welcome</p>
+                    <p class="text-gray-400"><i class="fas fa-tasks text-purple-400 mr-2"></i> No experience needed</p>
+                </div>
+                <button onclick="applyForJob('Event Assistant')" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition">
+                    Apply Now
+                </button>
+            </div>
+        </div>
+        
+        <!-- Application Form -->
+        <div id="applicationForm" class="glassmorphism p-10 max-w-3xl mx-auto hidden">
+            <h2 class="text-3xl font-bold text-white mb-6 text-center">Apply for <span id="selectedPosition"></span></h2>
+            
+            <form id="jobApplicationForm" class="space-y-6">
+                <input type="hidden" id="jobPosition">
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-white mb-2">Full Name *</label>
+                        <input type="text" id="applicantName" class="w-full bg-white/10 border border-white/20 rounded-lg px-6 py-3 text-white" required>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-white mb-2">Phone Number *</label>
+                        <input type="tel" id="applicantPhone" class="w-full bg-white/10 border border-white/20 rounded-lg px-6 py-3 text-white" required>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-white mb-2">Email</label>
+                        <input type="email" id="applicantEmail" class="w-full bg-white/10 border border-white/20 rounded-lg px-6 py-3 text-white">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-white mb-2">Location in Lucknow *</label>
+                        <input type="text" id="applicantLocation" class="w-full bg-white/10 border border-white/20 rounded-lg px-6 py-3 text-white" placeholder="e.g., Gomti Nagar" required>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-white mb-2">Experience (Years)</label>
+                        <input type="number" id="applicantExperience" class="w-full bg-white/10 border border-white/20 rounded-lg px-6 py-3 text-white">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-white mb-2">Age *</label>
+                        <input type="number" id="applicantAge" class="w-full bg-white/10 border border-white/20 rounded-lg px-6 py-3 text-white" required>
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="block text-white mb-2">Why should we hire you? *</label>
+                    <textarea id="applicantMessage" rows="4" class="w-full bg-white/10 border border-white/20 rounded-lg px-6 py-3 text-white" required></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-gradient-to-r from-green-600 to-teal-600 text-white py-4 rounded-lg font-semibold hover:shadow-lg transition">
+                    Submit Application
+                </button>
+                
+                <p class="text-center text-gray-400 text-sm">
+                    <i class="fas fa-shield-alt mr-2"></i> Your information is secure. Only shortlisted candidates will be contacted.
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Supabase configuration
+        const SUPABASE_URL = 'https://eibvlmsgprvwoetoqffa.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVpYnZsbXNncHJ2d29ldG9xZmZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE2NjMzODMsImV4cCI6MjA4NzIzOTM4M30.YVEGGX0nNE-S_0Nksd-H8GI1ejdx-sS2ZRHiMf6xMjw';
+        const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+        
+        function applyForJob(position) {
+            document.getElementById('selectedPosition').textContent = position;
+            document.getElementById('jobPosition').value = position;
+            document.getElementById('applicationForm').classList.remove('hidden');
+            document.getElementById('applicationForm').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        document.getElementById('jobApplicationForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const applicationData = {
+                position: document.getElementById('jobPosition').value,
+                name: document.getElementById('applicantName').value,
+                phone: document.getElementById('applicantPhone').value,
+                email: document.getElementById('applicantEmail').value,
+                location: document.getElementById('applicantLocation').value,
+                experience: document.getElementById('applicantExperience').value,
+                age: document.getElementById('applicantAge').value,
+                message: document.getElementById('applicantMessage').value,
+                applied_date: new Date().toISOString(),
+                status: 'New'
+            };
+            
+            try {
+                const { data, error } = await supabase
+                    .from('job_applications')
+                    .insert(applicationData);
+                
+                if (error) throw error;
+                
+                alert('Application submitted successfully! We will contact you soon.');
+                this.reset();
+                document.getElementById('applicationForm').classList.add('hidden');
+                
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error submitting application. Please try again.');
+            }
+        });
+    </script>
+</body>
+</html>

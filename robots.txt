@@ -1,0 +1,11 @@
+# robots.txt for lucknow24events.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://lucknow24events.com/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /assets/
