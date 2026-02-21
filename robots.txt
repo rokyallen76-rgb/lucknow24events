@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://lucknow24events.com/sitemap.xml
