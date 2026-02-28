@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    
+    <!-- Primary Meta Tags - Dynamic -->
+    <title id="meta-title">Lucknow24Events | Best Event Management Company in Lucknow</title>
+    <meta name="description" id="meta-description" content="Lucknow's premier event management company. Professional wedding planning, corporate events, birthday parties in Lucknow. 500+ events managed.">
+    <meta name="keywords" id="meta-keywords" content="event management in lucknow, wedding planners lucknow, party organizers lucknow">
+    <meta name="author" id="meta-author" content="Lucknow24Events">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" id="og-url" content="https://lucknow24events.com/">
+    <meta property="og:title" id="og-title" content="Lucknow24Events - Best Event Management in Lucknow">
+    <meta property="og:description" id="og-description" content="Professional event management services in Lucknow.">
+    <meta property="og:image" id="og-image" content="">
+    
+    <!-- Favicon / Logo -->
+    <link rel="icon" type="image/png" id="favicon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎉</text></svg>">
+    <link rel="apple-touch-icon" id="apple-touch-icon" href="">
+    
+    <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .glassmorphism:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .lucknow-badge {
+            background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-block;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .subdomain-nav {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 10px 0;
+        }
+        
+        .nav-menu-item {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            min-height: 44px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nav-menu-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .nav-menu-item:hover::before {
+            left: 100%;
+        }
+        
+        .nav-menu-item:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .subdomain-nav .container > div {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+                gap: 4px;
+                padding-bottom: 4px;
+            }
+            .subdomain-nav .container > div::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+            padding: 15px 25px;
+            border-radius: 10px;
+            background: white;
+            color: #333;
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .notification.show { transform: translateX(0); }
+        .notification.success { background: #10b981; color: white; }
+        .notification.error { background: #ef4444; color: white; }
+        .notification.info { background: #3b82f6; color: white; }
+        
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 50;
+            background: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            animation: bounce 2s infinite;
+            text-decoration: none;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
+            animation: none;
+        }
+        
+        .manager-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s;
+        }
+        
+        .manager-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+            border-color: rgba(168, 85, 247, 0.5);
+        }
+        
+        .manager-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(168, 85, 247, 0.5);
+            transition: all 0.3s;
+        }
+        
+        .manager-card:hover .manager-photo {
+            transform: scale(1.1);
+            border-color: rgba(168, 85, 247, 1);
+        }
+        
+        @media (max-width: 640px) {
+            .manager-card {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.75rem;
+            }
+        }
+        
+        .quick-nav-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+        
+        .quick-nav-item {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 40px;
+            padding: 12px 8px;
+            text-align: center;
+            color: white;
+            font-weight: 500;
+            font-size: 15px;
+            transition: all 0.2s;
+            min-height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .quick-nav-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .quick-nav-item:hover::before {
+            left: 100%;
+        }
+        
+        .quick-nav-item:hover {
+            background: linear-gradient(135deg, #9333ea, #db2777);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(147, 51, 234, 0.3);
+        }
+        
+        @media (min-width: 640px) {
+            .quick-nav-grid {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+        
+        .mobile-sticky-cta { display: none; }
+        @media (max-width: 767px) {
+            .mobile-sticky-cta {
+                display: block;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 45;
+                background: rgba(15, 10, 30, 0.95);
+                backdrop-filter: blur(8px);
+                border-top: 1px solid rgba(255,255,255,0.15);
+                padding: 8px 12px;
+            }
+            .mobile-sticky-cta .cta-container {
+                display: flex;
+                gap: 12px;
+                align-items: center;
+                justify-content: center;
+            }
+            .mobile-sticky-cta a {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                min-height: 52px;
+                border-radius: 40px;
+                font-weight: 600;
+                font-size: 16px;
+                text-decoration: none;
+                transition: all 0.3s;
+            }
+            .cta-call {
+                background: #2d3748;
+                color: white;
+                border: 1px solid #4a5568;
+            }
+            .cta-call:hover {
+                background: #4a5568;
+            }
+            .cta-book {
+                background: linear-gradient(135deg, #9333ea, #db2777);
+                color: white;
+            }
+            .cta-book:hover {
+                transform: scale(1.05);
+            }
+            body { padding-bottom: 80px; }
+        }
+        
+        .loading-spinner {
+            border: 3px solid rgba(255,255,255,0.3);
+            border-top: 3px solid white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 50;
+            background: rgba(168, 85, 247, 0.8);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            backdrop-filter: blur(5px);
+        }
+        #backToTop:hover { 
+            background: rgba(168, 85, 247, 1); 
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(168, 85, 247, 0.4);
+        }
+        
+        .hero-slider {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+        
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+        
+        .hero-slide.active {
+            opacity: 1;
+        }
+        
+        .service-card {
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        
+        .service-card:hover::before {
+            opacity: 1;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 40px rgba(0,0,0,0.4);
+        }
+        
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            cursor: pointer;
+        }
+        
+        .portfolio-item img {
+            transition: all 0.5s;
+        }
+        
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .portfolio-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .portfolio-item:hover::after {
+            opacity: 1;
+        }
+        
+        .portfolio-item .portfolio-title {
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            color: white;
+            font-weight: 600;
+            z-index: 2;
+            transition: bottom 0.3s;
+        }
+        
+        .portfolio-item:hover .portfolio-title {
+            bottom: 0;
+        }
+        
+        .form-input {
+            transition: all 0.3s;
+        }
+        
+        .form-input:focus {
+            border-color: #9333ea;
+            box-shadow: 0 0 0 3px rgba(147, 51, 234, 0.2);
+            outline: none;
+        }
+        
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        @media (max-width: 768px) {
+            .stats-number {
+                font-size: 2rem;
+            }
+        }
+
+        .logo-container {
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .logo-container:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(168, 85, 247, 0.3);
+        }
+
+        .feature-icon {
+            transition: all 0.3s;
+        }
+        
+        .feature-icon:hover {
+            transform: rotate(360deg);
+        }
+        
+        .logo-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .seo-keywords-section {
+            background: rgba(255,255,255,0.02);
+            border-radius: 40px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .keyword-tag {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            margin: 0.25rem;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .keyword-tag:hover {
+            background: linear-gradient(135deg, #9333ea, #db2777);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(147, 51, 234, 0.3);
+            border-color: transparent;
+        }
+        
+        .about-feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        
+        @media (max-width: 640px) {
+            .about-feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .service-book-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1.5rem;
+            background: linear-gradient(135deg, #9333ea, #db2777);
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .service-book-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(147, 51, 234, 0.3);
+        }
+        
+        /* Clickable elements indicator */
+        [data-clickable="true"] {
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        [data-clickable="true"]:hover {
+            opacity: 0.8;
+            transform: scale(1.02);
+        }
+        
+        /* Section controls */
+        .section-container {
+            position: relative;
+        }
+        
+        /* Admin edit hint */
+        .admin-hint {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #9333ea;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 20px;
+            font-size: 10px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+            z-index: 100;
+        }
+        
+        .section-container:hover .admin-hint {
+            opacity: 1;
+        }
+        
+        /* Content wrapper for editable elements */
+        [data-editable="true"] {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        [data-editable="true"]:hover {
+            outline: 2px dashed rgba(147, 51, 234, 0.5);
+            outline-offset: 4px;
+        }
+        
+        /* Dynamic section */
+        .dynamic-section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-radius: 16px;
+            background: rgba(255,255,255,0.02);
+        }
+        
+        .dynamic-section.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Notification -->
+    <div id="notification" class="notification"></div>
+    
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[100] flex items-center justify-center hidden">
+        <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-md">
+            <div class="loading-spinner"></div>
+            <p class="text-white mt-4 animate-pulse">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Subdomain Navigation (Fully Dynamic) -->
+    <div id="top-nav-section" class="subdomain-nav dynamic-section" data-section-id="top-nav">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between overflow-x-auto no-scrollbar">
+                <div class="flex items-center space-x-2 flex-shrink-0">
+                    <span class="lucknow-badge whitespace-nowrap" id="location-badge" data-editable="true" data-element-id="location-badge">
+                        <i class="fas fa-map-marker-alt mr-1"></i> Lucknow
+                    </span>
+                    <span class="text-white text-sm hidden sm:inline whitespace-nowrap" id="since-text" data-editable="true" data-element-id="since-text">Serving Since 2010</span>
+                </div>
+                <div class="flex gap-2 flex-shrink-0" id="nav-menu-container">
+                    <!-- Navigation menu items loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="#" target="_blank" id="whatsapp-link" class="whatsapp-btn" data-clickable="true" data-element-id="whatsapp-link">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Main Navigation -->
+    <nav class="glassmorphism mx-4 md:mx-8 mt-2 md:mt-4 p-3 md:p-5 sticky top-2 md:top-4 z-40 dynamic-section" data-section-id="main-nav">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <a href="/" id="logo-link" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center logo-container overflow-hidden" data-clickable="true" data-element-id="logo-link">
+                    <i class="fas fa-glass-cheers text-white text-lg md:text-xl hidden" id="logo-icon" data-element-id="logo-icon"></i>
+                    <img id="logo-image" class="logo-image hidden w-full h-full object-cover" src="" alt="Logo" data-element-id="logo-image">
+                </a>
+                <div>
+                    <span class="text-xl md:text-2xl font-bold text-white" id="site-title" data-editable="true" data-element-id="site-title">Lucknow<span class="text-purple-400">24</span><span class="text-pink-400">Events</span></span>
+                    <p class="text-xs text-gray-400 hidden sm:block" id="site-tagline" data-editable="true" data-element-id="site-tagline"><i class="fas fa-map-marker-alt text-pink-400"></i> Lucknow's Premier Event Company</p>
+                </div>
+            </div>
+            
+            <div class="hidden md:block" id="desktop-menu-container">
+                <!-- Desktop menu items loaded dynamically -->
+            </div>
+            
+            <div class="md:hidden flex items-center gap-4">
+                <a href="tel:" id="mobile-call-btn" class="text-white text-xl p-2" style="min-height:44px; display:inline-flex; align-items:center;" data-clickable="true" data-element-id="mobile-call-btn">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+                <button id="mobileMenuBtn" class="text-white text-2xl p-2" style="min-height:44px; min-width:44px;">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden mt-5 pt-5 border-t border-gray-700">
+            <ul class="space-y-4" id="mobile-menu-container">
+                <!-- Mobile menu items loaded dynamically -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sticky Mobile CTA Bar -->
+    <div class="mobile-sticky-cta md:hidden dynamic-section" data-section-id="sticky-cta">
+        <div class="cta-container">
+            <a href="tel:" id="sticky-call-btn" class="cta-call" data-clickable="true" data-element-id="sticky-call-btn"><i class="fas fa-phone-alt"></i> Call</a>
+            <a href="/book" id="sticky-book-btn" class="cta-book" data-clickable="true" data-element-id="sticky-book-btn"><i class="fas fa-calendar-check"></i> Book Now</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 md:px-8 py-4 md:py-8">
+        <!-- Hero Section with Slider -->
+        <section id="home" class="mb-10 md:mb-20 scroll-mt-24 dynamic-section" data-section-id="hero">
+            <div class="glassmorphism p-4 md:p-16">
+                <div class="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="lucknow-badge mb-4 md:mb-6 inline-block" id="hero-badge" data-editable="true" data-element-id="hero-badge">
+                            <i class="fas fa-crown mr-2"></i> Lucknow's #1 Event Management
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight animate__animated animate__fadeInLeft" id="hero-title" data-editable="true" data-element-id="hero-title">
+                            Lucknow<span class="text-purple-400">24</span><span class="text-pink-400">Events</span>
+                        </h1>
+                        <p class="text-gray-300 text-base md:text-lg lg:text-xl mb-6 md:mb-8 animate__animated animate__fadeInLeft animate__delay-1s" id="hero-description" data-editable="true" data-element-id="hero-description">
+                            Professional wedding planning, corporate events, and parties in Lucknow. 
+                            <span class="text-yellow-400 font-semibold" id="events-count" data-editable="true" data-element-id="events-count">500+ events</span> successfully managed with 
+                            <span class="text-purple-400 font-semibold" id="staff-count" data-editable="true" data-element-id="staff-count">200+ professional staff</span>.
+                        </p>
+                        <div class="flex flex-wrap gap-3 md:gap-4 animate__animated animate__fadeInLeft animate__delay-2s">
+                            <a href="/book" id="hero-book-btn" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold hover:shadow-lg transition text-sm md:text-base inline-flex items-center" data-clickable="true" data-element-id="hero-book-btn">
+                                <i class="fas fa-calendar-check mr-2"></i> <span id="hero-book-text" data-editable="true" data-element-id="hero-book-text">Book Event in Lucknow</span>
+                            </a>
+                            <a href="tel:" id="phone-number-link" class="bg-transparent border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition text-sm md:text-base inline-flex items-center" data-clickable="true" data-element-id="phone-number-link">
+                                <i class="fas fa-phone-alt mr-2"></i> <span id="phone-number-text" data-editable="true" data-element-id="phone-number-text">Call Us Now</span>
+                            </a>
+                        </div>
+                        
+                        <!-- Trust Badges -->
+                        <div class="mt-6 md:mt-12 grid grid-cols-3 gap-2 md:gap-4 animate__animated animate__fadeInUp animate__delay-3s">
+                            <div class="text-center">
+                                <div class="stats-number" id="events-done" data-editable="true" data-element-id="events-done">500+</div>
+                                <div class="text-gray-400 text-xs md:text-sm" id="events-done-label" data-editable="true" data-element-id="events-done-label">Events Done</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="stats-number" id="happy-staff" data-editable="true" data-element-id="happy-staff">200+</div>
+                                <div class="text-gray-400 text-xs md:text-sm" id="happy-staff-label" data-editable="true" data-element-id="happy-staff-label">Happy Staff</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="stats-number" id="years-exp" data-editable="true" data-element-id="years-exp">15+</div>
+                                <div class="text-gray-400 text-xs md:text-sm" id="years-exp-label" data-editable="true" data-element-id="years-exp-label">Years Experience</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative order-1 md:order-2 mb-4 md:mb-0 hero-slider" id="hero-slider-container" style="height: 400px;">
+                        <div id="hero-slider" class="relative w-full h-full">
+                            <!-- Slides will be loaded dynamically -->
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white p-3 md:p-4 rounded-full shadow-lg">
+                            <i class="fas fa-check text-xl md:text-2xl"></i>
+                        </div>
+                        
+                        <!-- Slider Controls -->
+                        <button class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/30 text-white w-10 h-10 rounded-full hover:bg-black/50 transition z-10" id="prev-slide">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/30 text-white w-10 h-10 rounded-full hover:bg-black/50 transition z-10" id="next-slide">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <!-- Slider Dots -->
+                        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-10" id="slider-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Navigation (Mobile) -->
+        <section class="mb-10 md:mb-16 block md:hidden dynamic-section" data-section-id="quick-nav">
+            <h2 class="text-lg font-semibold text-white/80 mb-3 px-2" id="quick-nav-title" data-editable="true" data-element-id="quick-nav-title">Quick access</h2>
+            <div class="quick-nav-grid" id="quick-nav-container">
+                <!-- Quick nav items loaded dynamically -->
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="mb-14 md:mb-20 scroll-mt-24 dynamic-section" data-section-id="about">
+            <div class="glassmorphism p-5 md:p-12">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-4 animate__animated animate__fadeInDown" id="about-title" data-editable="true" data-element-id="about-title">About Lucknow24Events</h2>
+                <p class="text-gray-400 text-center mb-6 md:mb-8 max-w-3xl mx-auto" id="about-subtitle" data-editable="true" data-element-id="about-subtitle">Your trusted partner for unforgettable events in the City of Nawabs</p>
+                
+                <div class="grid md:grid-cols-2 gap-6 items-center">
+                    <div class="relative group">
+                        <a href="#" id="about-image-link" data-clickable="true" data-element-id="about-image-link">
+                            <img src="" alt="About Lucknow24Events" class="rounded-2xl shadow-xl w-full h-auto about-image transition duration-500 group-hover:scale-105" id="about-image" data-editable="true" data-element-id="about-image" loading="lazy">
+                        </a>
+                        <div class="absolute inset-0 bg-gradient-to-t from-purple-900/50 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition"></div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-4" id="about-heading" data-editable="true" data-element-id="about-heading">We Understand Lucknow's Heartbeat</h3>
+                        <p class="text-gray-300 mb-4" id="about-text-1" data-editable="true" data-element-id="about-text-1">Since 2010, Lucknow24Events has been the go-to event management company for families and businesses across Lucknow. We blend traditional Lucknowi tehzeeb with modern event management techniques.</p>
+                        <p class="text-gray-300 mb-6" id="about-text-2" data-editable="true" data-element-id="about-text-2">Our team of 200+ professionals knows every venue, every vendor, and every detail that makes events in Lucknow truly special. From Hazratganj to Gomti Nagar, we've got you covered.</p>
+                        
+                        <div class="about-feature-grid" id="about-features">
+                            <!-- Features will be loaded dynamically -->
+                        </div>
+                        
+                        <a href="#" id="about-read-more-btn" class="mt-6 inline-block text-purple-400 hover:text-purple-300 font-semibold" data-clickable="true" data-element-id="about-read-more-btn">
+                            <span id="about-read-more-text" data-editable="true" data-element-id="about-read-more-text">Read More</span> <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Trust Us -->
+        <section class="mb-14 md:mb-20 dynamic-section" data-section-id="trust">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-4" id="trust-title" data-editable="true" data-element-id="trust-title">Why Lucknow Trusts Us</h2>
+            <p class="text-gray-400 text-center mb-6 md:mb-12 max-w-3xl mx-auto px-4" id="trust-subtitle" data-editable="true" data-element-id="trust-subtitle">We understand Lucknow's culture, traditions, and modern needs perfectly</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6" id="trust-features">
+                <!-- Features will be loaded dynamically -->
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="mb-14 md:mb-20 scroll-mt-24 dynamic-section" data-section-id="services">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-4" id="services-title" data-editable="true" data-element-id="services-title">Our Services in Lucknow</h2>
+            <p class="text-gray-400 text-center mb-6 md:mb-12" id="services-subtitle" data-editable="true" data-element-id="services-subtitle">Complete event solutions across all locations in Lucknow</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" id="services-container">
+                <!-- Services will be loaded here -->
+                <div class="glassmorphism p-8 text-center col-span-full">
+                    <div class="loading-spinner"></div>
+                    <p class="text-gray-400 mt-4">Loading services...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="mb-14 md:mb-20 scroll-mt-24 dynamic-section" data-section-id="portfolio">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-4" id="portfolio-title" data-editable="true" data-element-id="portfolio-title">Our Recent Work</h2>
+            <p class="text-gray-400 text-center mb-6 md:mb-8" id="portfolio-subtitle" data-editable="true" data-element-id="portfolio-subtitle">Glimpses of events we've managed in Lucknow</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-8" id="portfolio-container">
+                <!-- Portfolio images will be loaded here -->
+                <div class="glassmorphism p-8 text-center col-span-full">
+                    <div class="loading-spinner"></div>
+                    <p class="text-gray-400 mt-4">Loading portfolio...</p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="/gallery" id="gallery-view-btn" class="inline-block bg-transparent border-2 border-purple-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-purple-600 transition" data-clickable="true" data-element-id="gallery-view-btn">
+                    <span id="gallery-view-text" data-editable="true" data-element-id="gallery-view-text">View Full Gallery</span> <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="mb-14 md:mb-20 dynamic-section" data-section-id="testimonials">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-4" id="testimonials-title" data-editable="true" data-element-id="testimonials-title">What Lucknow Says</h2>
+            <p class="text-gray-400 text-center mb-6 md:mb-12" id="testimonials-subtitle" data-editable="true" data-element-id="testimonials-subtitle">Hear from our happy clients</p>
+            
+            <div class="swiper testimonialsSwiper">
+                <div class="swiper-wrapper" id="testimonials-container">
+                    <!-- Testimonials will be loaded here -->
+                </div>
+                <div class="swiper-pagination mt-8"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <!-- Venues Section -->
+        <section class="mb-14 md:mb-20 dynamic-section" data-section-id="venues">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-4" id="venues-title" data-editable="true" data-element-id="venues-title">Popular Venues in Lucknow</h2>
+            <p class="text-gray-400 text-center mb-6 md:mb-12" id="venues-subtitle" data-editable="true" data-element-id="venues-subtitle">We work with all major venues across Lucknow</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4" id="venues-container">
+                <!-- Venues will be loaded here -->
+                <div class="text-gray-400 col-span-full text-center">Loading venues...</div>
+            </div>
+        </section>
+
+        <!-- Custom Sections (Fully Dynamic) -->
+        <div id="custom-sections-container">
+            <!-- Custom sections will be loaded dynamically -->
+        </div>
+
+        <!-- SEO Keywords Section -->
+        <section class="mb-14 md:mb-20 seo-keywords-section dynamic-section" data-section-id="seo">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-white mb-6" id="seo-title" data-editable="true" data-element-id="seo-title">People Also Search</h2>
+            <div class="flex flex-wrap justify-center gap-2" id="seo-keywords-container">
+                <!-- SEO Keywords will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Quick Enquiry Form -->
+        <section id="enquiry" class="mb-14 md:mb-20 scroll-mt-24 dynamic-section" data-section-id="enquiry">
+            <div class="glassmorphism p-6 md:p-10">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center mb-4" id="enquiry-title" data-editable="true" data-element-id="enquiry-title">Quick Enquiry for Lucknow Events</h2>
+                <p class="text-gray-400 text-center mb-6 md:mb-8" id="enquiry-subtitle" data-editable="true" data-element-id="enquiry-subtitle">Get response within 30 minutes</p>
+                
+                <form id="quickEnquiryForm" class="max-w-2xl mx-auto">
+                    <div class="grid md:grid-cols-2 gap-4 md:gap-6">
+                        <input type="text" id="enquiryName" placeholder="Your Name" class="form-input bg-white/10 border border-white/20 rounded-lg px-4 md:px-6 py-3 md:py-4 text-white text-base" required>
+                        <input type="tel" id="enquiryPhone" placeholder="Phone Number" inputmode="tel" class="form-input bg-white/10 border border-white/20 rounded-lg px-4 md:px-6 py-3 md:py-4 text-white text-base" required>
+                        <input type="email" id="enquiryEmail" placeholder="Email (Optional)" class="form-input bg-white/10 border border-white/20 rounded-lg px-4 md:px-6 py-3 md:py-4 text-white text-base">
+                        <select id="enquiryEvent" class="form-input bg-white/10 border border-white/20 rounded-lg px-4 md:px-6 py-3 md:py-4 text-white text-base">
+                            <option value="" class="bg-gray-800">Select Event Type</option>
+                            <option value="Wedding" class="bg-gray-800">Wedding</option>
+                            <option value="Corporate" class="bg-gray-800">Corporate Event</option>
+                            <option value="Birthday" class="bg-gray-800">Birthday Party</option>
+                            <option value="Engagement" class="bg-gray-800">Engagement</option>
+                            <option value="Anniversary" class="bg-gray-800">Anniversary</option>
+                            <option value="Other" class="bg-gray-800">Other</option>
+                        </select>
+                        <input type="date" id="enquiryDate" class="form-input bg-white/10 border border-white/20 rounded-lg px-4 md:px-6 py-3 md:py-4 text-white text-base">
+                    </div>
+                    <textarea id="enquiryMessage" rows="4" placeholder="Tell us about your event requirements..." class="form-input w-full mt-4 md:mt-6 bg-white/10 border border-white/20 rounded-lg px-4 md:px-6 py-3 md:py-4 text-white text-base"></textarea>
+                    <button type="submit" id="enquiry-submit-btn" class="w-full mt-4 md:mt-6 bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 md:py-4 rounded-lg font-semibold hover:shadow-lg transition text-base transform hover:scale-105" data-clickable="true" data-element-id="enquiry-submit-btn">
+                        <span id="enquiry-submit-text" data-editable="true" data-element-id="enquiry-submit-text">Send Enquiry</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-14 md:mb-20 scroll-mt-24 dynamic-section" data-section-id="contact">
+            <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+                <div class="glassmorphism p-6 md:p-10">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6" id="contact-title" data-editable="true" data-element-id="contact-title">Visit Our Office</h3>
+                    <div class="space-y-4 md:space-y-6" id="contact-info">
+                        <div class="flex items-start gap-3 md:gap-4 group">
+                            <i class="fas fa-map-marker-alt text-purple-400 text-lg md:text-xl mt-1 group-hover:scale-110 transition"></i>
+                            <div>
+                                <p class="text-white font-semibold" id="contact-head-office-label" data-editable="true" data-element-id="contact-head-office-label">Head Office</p>
+                                <p class="text-gray-400 text-sm md:text-base" id="head-office" data-editable="true" data-element-id="head-office">123, Hazratganj, Lucknow - 226001</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 md:gap-4 group">
+                            <i class="fas fa-phone text-purple-400 text-lg md:text-xl mt-1 group-hover:scale-110 transition"></i>
+                            <div>
+                                <p class="text-white font-semibold" id="contact-phone-label" data-editable="true" data-element-id="contact-phone-label">Call Us</p>
+                                <p class="text-gray-400 text-sm md:text-base" id="phone-1" data-editable="true" data-element-id="phone-1">+91 99999 99999</p>
+                                <p class="text-gray-400 text-sm md:text-base" id="phone-2" data-editable="true" data-element-id="phone-2">+91 88888 88888</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 md:gap-4 group">
+                            <i class="fas fa-envelope text-purple-400 text-lg md:text-xl mt-1 group-hover:scale-110 transition"></i>
+                            <div>
+                                <p class="text-white font-semibold" id="contact-email-label" data-editable="true" data-element-id="contact-email-label">Email</p>
+                                <p class="text-gray-400 text-sm md:text-base" id="email" data-editable="true" data-element-id="email">info@lucknow24events.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Map -->
+                    <div class="mt-6 md:mt-8 h-48 md:h-64 bg-gray-800 rounded-lg overflow-hidden group">
+                        <a href="#" id="map-link" data-clickable="true" data-element-id="map-link">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.649723779073!2d80.9462!3d26.8467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd8b1f5b1b5b%3A0x1b5b5b5b5b5b5b5b!2sHazratganj%2C%20Lucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="group-hover:scale-110 transition duration-500"></iframe>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="glassmorphism p-6 md:p-10">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6" id="hours-title" data-editable="true" data-element-id="hours-title">Business Hours</h3>
+                    <div class="space-y-3 md:space-y-4" id="business-hours">
+                        <div class="flex justify-between border-b border-white/10 pb-2">
+                            <span class="text-gray-400 text-sm md:text-base" id="hours-weekdays" data-editable="true" data-element-id="hours-weekdays">Monday - Saturday</span>
+                            <span class="text-white text-sm md:text-base" id="hours-weekdays-time" data-editable="true" data-element-id="hours-weekdays-time">9:00 AM - 9:00 PM</span>
+                        </div>
+                        <div class="flex justify-between border-b border-white/10 pb-2">
+                            <span class="text-gray-400 text-sm md:text-base" id="hours-sunday" data-editable="true" data-element-id="hours-sunday">Sunday</span>
+                            <span class="text-white text-sm md:text-base" id="hours-sunday-time" data-editable="true" data-element-id="hours-sunday-time">10:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400 text-sm md:text-base" id="hours-emergency" data-editable="true" data-element-id="hours-emergency">Emergency Support</span>
+                            <span class="text-green-400 text-sm md:text-base animate-pulse" id="hours-emergency-status" data-editable="true" data-element-id="hours-emergency-status">24/7 Available</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 md:mt-8">
+                        <h4 class="text-white font-semibold mb-3 md:mb-4" id="social-title" data-editable="true" data-element-id="social-title">Follow Us</h4>
+                        <div class="flex gap-3 md:gap-4" id="social-links">
+                            <!-- Social links will be loaded dynamically -->
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter -->
+                    <div class="mt-6 md:mt-8">
+                        <h4 class="text-white font-semibold mb-3" id="newsletter-title" data-editable="true" data-element-id="newsletter-title">Subscribe to Newsletter</h4>
+                        <form id="newsletterForm" class="flex">
+                            <input type="email" id="newsletter-email" placeholder="Your Email" class="flex-1 bg-white/10 border border-white/20 rounded-l-lg px-4 py-3 text-white text-base form-input" required style="min-height:48px;">
+                            <button type="submit" id="newsletter-submit-btn" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-5 py-3 rounded-r-lg hover:shadow-lg transition text-base transform hover:scale-105" style="min-height:48px;" data-clickable="true" data-element-id="newsletter-submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="mb-14 md:mb-20 dynamic-section" data-section-id="team">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-4" id="team-title" data-editable="true" data-element-id="team-title">Our Leadership</h2>
+            <p class="text-gray-400 text-center mb-8" id="team-subtitle" data-editable="true" data-element-id="team-subtitle">Meet the people behind your perfect event</p>
+            <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto" id="team-container">
+                <!-- Team members will be loaded here -->
+                <div class="glassmorphism p-8 text-center col-span-full">
+                    <div class="loading-spinner"></div>
+                    <p class="text-gray-400 mt-4">Loading team...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="glassmorphism mx-4 md:mx-8 mb-4 p-6 md:p-10 dynamic-section" data-section-id="footer">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4" id="footer-title" data-editable="true" data-element-id="footer-title">Lucknow24Events</h4>
+                    <p class="text-gray-400 mb-4 text-sm md:text-base" id="footer-description" data-editable="true" data-element-id="footer-description">Lucknow's most trusted event management company since 2010.</p>
+                    <p class="text-gray-400 text-sm" id="footer-address" data-editable="true" data-element-id="footer-address">
+                        <i class="fas fa-map-marker-alt mr-2 text-purple-400"></i> Hazratganj, Lucknow
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4" id="quick-links-title" data-editable="true" data-element-id="quick-links-title">Quick Links</h4>
+                    <ul class="space-y-2" id="quick-links-container">
+                        <!-- Quick links loaded dynamically -->
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4" id="subdomains-title" data-editable="true" data-element-id="subdomains-title">Our Subdomains</h4>
+                    <ul class="space-y-2" id="subdomains-list">
+                        <!-- Subdomains loaded dynamically -->
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4" id="contact-footer-title" data-editable="true" data-element-id="contact-footer-title">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400 text-sm md:text-base"><i class="fas fa-phone mr-2 text-purple-400"></i> <span id="footer-phone-1" data-editable="true" data-element-id="footer-phone-1">+91 99999 99999</span></li>
+                        <li class="text-gray-400 text-sm md:text-base"><i class="fas fa-phone mr-2 text-purple-400"></i> <span id="footer-phone-2" data-editable="true" data-element-id="footer-phone-2">+91 88888 88888</span></li>
+                        <li class="text-gray-400 text-sm md:text-base"><i class="fas fa-envelope mr-2 text-purple-400"></i> <span id="footer-email" data-editable="true" data-element-id="footer-email">info@lucknow24events.com</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 mt-6 md:mt-10 pt-6 md:pt-8 text-center">
+                <p class="text-gray-500 text-xs md:text-sm" id="copyright" data-editable="true" data-element-id="copyright">© 2024 Lucknow24Events. All rights reserved. Serving Lucknow with pride.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 bg-black/90 hidden z-[60] flex items-center justify-center">
+        <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white text-4xl hover:scale-110 transition">&times;</button>
+        <img id="lightboxImg" src="" alt="" class="max-w-full max-h-screen p-4">
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Configuration
+        const DEBUG = true;
+        const BACKEND_URL = 'https://script.google.com/macros/s/AKfycbw4_jHfyZZR1TICTCb7bIJ0MNuWXyN4CuWG9D5mkEc_YD7m60ci_lxoqAgsfz3G4XpFAQ/exec';
+        let testimonialsSwiper = null;
+        let heroSliderInterval = null;
+        let currentSlide = 0;
+        let heroSlides = [];
+        let allData = null;
+
+        // Show notification
+        function showNotification(message, type = 'success') {
+            const notification = document.getElementById('notification');
+            if (!notification) return;
+            notification.textContent = message;
+            notification.className = `notification ${type} show`;
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+
+        // Show/hide loading
+        function setLoading(show) {
+            const overlay = document.getElementById('loadingOverlay');
+            if (overlay) {
+                overlay.classList.toggle('hidden', !show);
+            }
+        }
+
+        // API call to Apps Script
+        async function callAPI(action, data = {}) {
+            try {
+                const formData = new FormData();
+                formData.append('action', action);
+                
+                Object.keys(data).forEach(key => {
+                    if (data[key] !== undefined && data[key] !== null) {
+                        formData.append(key, data[key]);
+                    }
+                });
+                
+                const response = await fetch(BACKEND_URL, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                return await response.json();
+            } catch (error) {
+                console.error('API Error:', error);
+                return { success: false, error: 'Network error' };
+            }
+        }
+
+        // Initialize hero slider
+        function initHeroSlider(slides) {
+            heroSlides = slides;
+            const container = document.getElementById('hero-slider');
+            const dotsContainer = document.getElementById('slider-dots');
+            
+            if (!container || slides.length === 0) return;
+            
+            container.innerHTML = '';
+            dotsContainer.innerHTML = '';
+            
+            slides.forEach((slide, index) => {
+                const slideDiv = document.createElement('div');
+                slideDiv.className = `hero-slide ${index === 0 ? 'active' : ''}`;
+                
+                const img = document.createElement('img');
+                img.src = slide.image_url;
+                img.alt = slide.title || 'Event';
+                img.className = 'w-full h-full object-cover rounded-3xl';
+                img.loading = 'lazy';
+                
+                if (slide.link_url) {
+                    const link = document.createElement('a');
+                    link.href = slide.link_url;
+                    link.target = slide.link_target || '_self';
+                    link.appendChild(img);
+                    slideDiv.appendChild(link);
+                } else {
+                    slideDiv.appendChild(img);
+                }
+                
+                container.appendChild(slideDiv);
+                
+                const dot = document.createElement('span');
+                dot.className = `w-2 h-2 bg-white rounded-full cursor-pointer transition-all ${index === 0 ? 'opacity-100 w-4' : 'opacity-50'}`;
+                dot.onclick = () => goToSlide(index);
+                dotsContainer.appendChild(dot);
+            });
+            
+            if (heroSliderInterval) clearInterval(heroSliderInterval);
+            heroSliderInterval = setInterval(nextSlide, 5000);
+        }
+
+        function goToSlide(index) {
+            const slides = document.querySelectorAll('.hero-slide');
+            const dots = document.querySelectorAll('#slider-dots span');
+            
+            if (!slides.length) return;
+            
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => {
+                dot.classList.remove('opacity-100', 'w-4');
+                dot.classList.add('opacity-50', 'w-2');
+            });
+            
+            slides[index].classList.add('active');
+            dots[index].classList.add('opacity-100', 'w-4');
+            dots[index].classList.remove('opacity-50', 'w-2');
+            
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            if (heroSlides.length === 0) return;
+            const next = (currentSlide + 1) % heroSlides.length;
+            goToSlide(next);
+        }
+
+        function prevSlide() {
+            if (heroSlides.length === 0) return;
+            const prev = (currentSlide - 1 + heroSlides.length) % heroSlides.length;
+            goToSlide(prev);
+        }
+
+        // Load navigation menu items
+        function loadNavigationMenu(menuItems) {
+            const navContainer = document.getElementById('nav-menu-container');
+            const desktopContainer = document.getElementById('desktop-menu-container');
+            const mobileContainer = document.getElementById('mobile-menu-container');
+            const quickNavContainer = document.getElementById('quick-nav-container');
+            const footerLinksContainer = document.getElementById('quick-links-container');
+            const subdomainsList = document.getElementById('subdomains-list');
+            
+            if (navContainer) {
+                navContainer.innerHTML = menuItems.filter(item => item.location === 'top-nav').map(item => `
+                    <a href="${item.url || '#'}" class="nav-menu-item whitespace-nowrap" target="${item.target || '_self'}" data-element-id="${item.element_id}">
+                        ${item.icon ? `<i class="fas ${item.icon}"></i>` : ''}
+                        <span>${item.text}</span>
+                    </a>
+                `).join('');
+            }
+            
+            if (desktopContainer) {
+                desktopContainer.innerHTML = `
+                    <ul class="flex space-x-8">
+                        ${menuItems.filter(item => item.location === 'desktop-nav').map(item => `
+                            <li>
+                                <a href="${item.url || '#'}" class="text-gray-300 hover:text-white transition nav-link" target="${item.target || '_self'}" data-element-id="${item.element_id}">
+                                    ${item.icon ? `<i class="fas ${item.icon} mr-1"></i>` : ''}
+                                    ${item.text}
+                                </a>
+                            </li>
+                        `).join('')}
+                    </ul>
+                `;
+            }
+            
+            if (mobileContainer) {
+                mobileContainer.innerHTML = menuItems.filter(item => item.location === 'mobile-nav').map(item => `
+                    <li>
+                        <a href="${item.url || '#'}" class="block text-gray-300 hover:text-white py-3 nav-link" target="${item.target || '_self'}" data-element-id="${item.element_id}">
+                            ${item.icon ? `<i class="fas ${item.icon} mr-2"></i>` : ''}
+                            ${item.text}
+                        </a>
+                    </li>
+                `).join('');
+                
+                const bookNowItem = menuItems.find(item => item.element_id === 'mobile-book-btn');
+                if (bookNowItem) {
+                    mobileContainer.innerHTML += `
+                        <li class="pt-4 border-t border-gray-700">
+                            <a href="${bookNowItem.url || '/book'}" class="block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-4 rounded-lg text-center font-semibold" target="${bookNowItem.target || '_self'}" data-element-id="${bookNowItem.element_id}">
+                                <i class="fas fa-calendar-check mr-2"></i> ${bookNowItem.text || 'Book Now'}
+                            </a>
+                        </li>
+                    `;
+                }
+            }
+            
+            if (quickNavContainer) {
+                quickNavContainer.innerHTML = menuItems.filter(item => item.location === 'quick-nav').map(item => `
+                    <a href="${item.url || '#'}" class="quick-nav-item" target="${item.target || '_self'}" data-element-id="${item.element_id}">
+                        ${item.icon ? `<i class="fas ${item.icon}"></i>` : ''}
+                        ${item.text}
+                    </a>
+                `).join('');
+            }
+            
+            if (footerLinksContainer) {
+                footerLinksContainer.innerHTML = menuItems.filter(item => item.location === 'footer-links').map(item => `
+                    <li>
+                        <a href="${item.url || '#'}" class="text-gray-400 hover:text-white text-sm md:text-base transition" target="${item.target || '_self'}" data-element-id="${item.element_id}">
+                            ${item.text}
+                        </a>
+                    </li>
+                `).join('');
+            }
+            
+            if (subdomainsList) {
+                subdomainsList.innerHTML = menuItems.filter(item => item.location === 'subdomains').map(item => `
+                    <li>
+                        <a href="${item.url || '#'}" class="text-gray-400 hover:text-white text-sm md:text-base transition" target="${item.target || '_self'}" data-element-id="${item.element_id}">
+                            ${item.icon ? `<i class="fas ${item.icon} mr-1"></i>` : ''}
+                            ${item.text}
+                        </a>
+                    </li>
+                `).join('');
+            }
+        }
+
+        // Load all content
+        async function loadAllContent() {
+            setLoading(true);
+            try {
+                if (DEBUG) console.log('🚀 Loading content from Apps Script...');
+
+                const result = await callAPI('get_all_public_data');
+                allData = result;
+                
+                if (!result.success) {
+                    throw new Error(result.error || 'Failed to load data');
+                }
+
+                // Update all editable content
+                if (result.content && result.content.length > 0) {
+                    result.content.forEach(item => {
+                        const element = document.getElementById(item.element_id);
+                        if (element) {
+                            if (item.content_type === 'image' && element.tagName === 'IMG') {
+                                element.src = item.content;
+                                element.onerror = function() { this.src = 'https://via.placeholder.com/800x600?text=Image+Not+Found'; };
+                            } else if (item.content_type === 'html') {
+                                element.innerHTML = item.content;
+                            } else {
+                                element.textContent = item.content;
+                            }
+                            if (DEBUG) console.log(`✅ Updated: ${item.element_id}`);
+                        }
+                    });
+                }
+
+                // Update settings
+                if (result.settings) {
+                    if (result.settings.site_name) {
+                        document.title = result.settings.site_name + ' | Best Event Management Company in Lucknow';
+                    }
+                    
+                    if (result.settings.logo_type === 'image' && result.settings.logo_image) {
+                        document.getElementById('logo-icon').classList.add('hidden');
+                        const logoImg = document.getElementById('logo-image');
+                        logoImg.classList.remove('hidden');
+                        logoImg.src = result.settings.logo_image;
+                    } else {
+                        document.getElementById('logo-image').classList.add('hidden');
+                        const logoIcon = document.getElementById('logo-icon');
+                        logoIcon.classList.remove('hidden');
+                        logoIcon.className = `fas ${result.settings.logo_icon || 'fa-glass-cheers'} text-white text-lg md:text-xl`;
+                    }
+                    
+                    if (result.settings.favicon) {
+                        document.getElementById('favicon').href = result.settings.favicon;
+                    }
+                    
+                    if (result.settings.meta_title) {
+                        document.getElementById('meta-title').textContent = result.settings.meta_title;
+                        document.getElementById('og-title').content = result.settings.meta_title;
+                    }
+                    if (result.settings.meta_description) {
+                        document.getElementById('meta-description').content = result.settings.meta_description;
+                        document.getElementById('og-description').content = result.settings.meta_description;
+                    }
+                    if (result.settings.meta_keywords) {
+                        document.getElementById('meta-keywords').content = result.settings.meta_keywords;
+                    }
+                    if (result.settings.meta_author) {
+                        document.getElementById('meta-author').content = result.settings.meta_author;
+                    }
+                    if (result.settings.og_image) {
+                        document.getElementById('og-image').content = result.settings.og_image;
+                    }
+                    
+                    if (result.settings.phone_primary) {
+                        const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+                        phoneLinks.forEach(link => {
+                            link.href = 'tel:' + result.settings.phone_primary;
+                        });
+                    }
+                    
+                    const whatsappLink = document.getElementById('whatsapp-link');
+                    if (whatsappLink && result.settings.whatsapp_number) {
+                        whatsappLink.href = 'https://wa.me/' + result.settings.whatsapp_number + '?text=Hi%20Lucknow24Events%2C%20I%20need%20event%20services%20in%20Lucknow';
+                    }
+                }
+
+                // Update hero slider
+                if (result.heroSlides && result.heroSlides.length > 0) {
+                    initHeroSlider(result.heroSlides);
+                }
+
+                // Update clickable elements
+                if (result.clickableElements && result.clickableElements.length > 0) {
+                    result.clickableElements.forEach(el => {
+                        const element = document.getElementById(el.element_id);
+                        if (element) {
+                            element.setAttribute('data-clickable', 'true');
+                            if (el.url) {
+                                if (element.tagName === 'A') {
+                                    element.href = el.url;
+                                    if (el.target) element.target = el.target;
+                                } else {
+                                    element.addEventListener('click', () => {
+                                        window.open(el.url, el.target || '_self');
+                                    });
+                                }
+                            }
+                        }
+                    });
+                }
+
+                // Update section visibility
+                if (result.sections && result.sections.length > 0) {
+                    result.sections.forEach(section => {
+                        const sectionEl = document.querySelector(`[data-section-id="${section.section_id}"]`);
+                        if (sectionEl) {
+                            if (section.visible === false) {
+                                sectionEl.classList.add('hidden');
+                            } else {
+                                sectionEl.classList.remove('hidden');
+                            }
+                        }
+                    });
+                }
+
+                // Load navigation menu
+                if (result.menuItems && result.menuItems.length > 0) {
+                    loadNavigationMenu(result.menuItems);
+                }
+
+                // Load services
+                if (result.services && result.services.length > 0) {
+                    const servicesContainer = document.getElementById('services-container');
+                    servicesContainer.innerHTML = result.services.map(service => {
+                        let features = [];
+                        try {
+                            features = service.features || [];
+                        } catch (e) {
+                            console.error('Error parsing features:', e);
+                        }
+                        
+                        return `
+                            <div class="glassmorphism p-6 md:p-8 service-card">
+                                <div class="text-5xl mb-4 animate__animated animate__bounceIn"><i class="fas ${service.icon || 'fa-glass-cheers'}"></i></div>
+                                <h3 class="text-2xl font-bold text-white mb-3">${service.title}</h3>
+                                <p class="text-gray-400 mb-4 text-sm md:text-base">${service.description || ''}</p>
+                                ${features.length > 0 ? `
+                                    <ul class="space-y-2 text-gray-300 mb-6 text-sm">
+                                        ${features.map(f => `<li><i class="fas fa-check text-green-400 mr-2"></i> ${f}</li>`).join('')}
+                                    </ul>
+                                ` : ''}
+                                ${service.price ? `<p class="text-purple-400 font-bold mb-4">Starting at ₹${service.price}</p>` : ''}
+                                <a href="${service.redirect_url || '/book'}" class="service-book-btn" target="${service.link_target || '_self'}">
+                                    ${service.button_text || 'Book Now'} →
+                                </a>
+                            </div>
+                        `;
+                    }).join('');
+                }
+
+                // Load testimonials
+                if (result.testimonials && result.testimonials.length > 0) {
+                    const testimonialsContainer = document.getElementById('testimonials-container');
+                    testimonialsContainer.innerHTML = result.testimonials.map(t => `
+                        <div class="swiper-slide">
+                            <div class="glassmorphism p-6 md:p-8 h-full">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <img src="${t.avatar || 'https://randomuser.me/api/portraits/women/44.jpg'}" 
+                                         alt="${t.name}" 
+                                         class="w-16 h-16 rounded-full object-cover border-2 border-purple-400"
+                                         onerror="this.src='https://randomuser.me/api/portraits/women/44.jpg'">
+                                    <div>
+                                        <h4 class="text-white font-bold">${t.name}</h4>
+                                        <p class="text-gray-400 text-sm">${t.event_type || 'Client'}</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-300 italic">"${t.testimonial}"</p>
+                                <div class="mt-4 text-yellow-400">
+                                    ${Array(parseInt(t.rating) || 5).fill('<i class="fas fa-star"></i>').join('')}
+                                </div>
+                                ${t.link_url ? `
+                                    <a href="${t.link_url}" target="${t.link_target || '_self'}" class="mt-4 inline-block text-purple-400 hover:text-purple-300 text-sm">
+                                        Read More <i class="fas fa-arrow-right ml-1"></i>
+                                    </a>
+                                ` : ''}
+                            </div>
+                        </div>
+                    `).join('');
+
+                    if (testimonialsSwiper) {
+                        testimonialsSwiper.destroy();
+                    }
+                    
+                    testimonialsSwiper = new Swiper('.testimonialsSwiper', {
+                        loop: true,
+                        autoplay: { delay: 5000 },
+                        pagination: { el: '.swiper-pagination', clickable: true },
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                        breakpoints: {
+                            640: { slidesPerView: 1 },
+                            768: { slidesPerView: 2 },
+                            1024: { slidesPerView: 3 }
+                        }
+                    });
+                }
+
+                // Load venues
+                if (result.venues && result.venues.length > 0) {
+                    const venuesContainer = document.getElementById('venues-container');
+                    venuesContainer.innerHTML = result.venues.map(venue => `
+                        <a href="${venue.link_url || '#'}" target="${venue.link_target || '_self'}" class="glassmorphism p-4 text-center hover:scale-105 transition cursor-pointer group">
+                            ${venue.image ? `<img src="${venue.image}" alt="${venue.name}" class="w-full h-24 object-cover rounded-lg mb-2" loading="lazy" onerror="this.src='https://via.placeholder.com/150?text=Venue'">` : ''}
+                            <span class="text-white font-semibold">${venue.name}</span>
+                            ${venue.location ? `<p class="text-gray-400 text-xs">${venue.location}</p>` : ''}
+                        </a>
+                    `).join('');
+                }
+
+                // Load portfolio
+                if (result.portfolio && result.portfolio.length > 0) {
+                    const portfolioContainer = document.getElementById('portfolio-container');
+                    portfolioContainer.innerHTML = result.portfolio.slice(0, 6).map(item => `
+                        <div class="portfolio-item relative h-48" onclick="openLightbox('${item.image_url}')">
+                            <img src="${item.image_url}" 
+                                 alt="${item.title || 'Event'}" 
+                                 class="rounded-2xl w-full h-full object-cover shadow-lg cursor-pointer" 
+                                 loading="lazy"
+                                 onerror="this.src='https://via.placeholder.com/400x300?text=Image+Not+Found'">
+                            ${item.title ? `<div class="portfolio-title">${item.title}</div>` : ''}
+                            ${item.link_url ? `
+                                <a href="${item.link_url}" target="${item.link_target || '_self'}" class="absolute top-2 right-2 bg-purple-600 text-white p-2 rounded-full z-10 hover:bg-purple-700">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            ` : ''}
+                        </div>
+                    `).join('');
+                }
+
+                // Load team
+                if (result.team && result.team.length > 0) {
+                    const teamContainer = document.getElementById('team-container');
+                    teamContainer.innerHTML = result.team.map(member => `
+                        <a href="${member.link_url || '#'}" target="${member.link_target || '_self'}" class="manager-card">
+                            <img src="${member.avatar || 'https://randomuser.me/api/portraits/men/1.jpg'}" alt="${member.name}" class="manager-photo" loading="lazy" onerror="this.src='https://randomuser.me/api/portraits/men/1.jpg'">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">${member.name}</h3>
+                                <p class="text-purple-400 mb-2">${member.position}</p>
+                                ${member.phone ? `<p class="text-gray-300 text-sm flex items-center gap-2"><i class="fas fa-phone-alt"></i> ${member.phone}</p>` : ''}
+                                ${member.email ? `<p class="text-gray-300 text-sm flex items-center gap-2"><i class="fas fa-envelope"></i> ${member.email}</p>` : ''}
+                            </div>
+                        </a>
+                    `).join('');
+                }
+
+                // Load trust features
+                if (result.features) {
+                    const trustFeatures = result.features.filter(f => f.category === 'trust');
+                    const trustContainer = document.getElementById('trust-features');
+                    if (trustContainer && trustFeatures.length > 0) {
+                        trustContainer.innerHTML = trustFeatures.map(feature => `
+                            <a href="${feature.link_url || '#'}" target="${feature.link_target || '_self'}" class="glassmorphism p-6 text-center hover:scale-105 transition">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center feature-icon">
+                                    <i class="fas ${feature.icon} text-white text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-white mb-2">${feature.title}</h3>
+                                <p class="text-gray-400 text-sm">${feature.description}</p>
+                            </a>
+                        `).join('');
+                    }
+                }
+
+                // Load about features
+                if (result.aboutFeatures) {
+                    const aboutFeaturesContainer = document.getElementById('about-features');
+                    if (aboutFeaturesContainer) {
+                        aboutFeaturesContainer.innerHTML = result.aboutFeatures.map(feature => `
+                            <a href="${feature.link_url || '#'}" target="${feature.link_target || '_self'}" class="flex items-center gap-2">
+                                <i class="fas ${feature.icon} text-green-400"></i>
+                                <span class="text-gray-300">${feature.text}</span>
+                            </a>
+                        `).join('');
+                    }
+                }
+
+                // Load social links
+                if (result.socialLinks) {
+                    const socialContainer = document.getElementById('social-links');
+                    if (socialContainer) {
+                        socialContainer.innerHTML = result.socialLinks.map(link => `
+                            <a href="${link.url}" target="_blank" class="w-10 h-10 md:w-12 md:h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-purple-600 transition transform hover:scale-110">
+                                <i class="fab ${link.icon} text-white"></i>
+                            </a>
+                        `).join('');
+                    }
+                }
+
+                // Load SEO Keywords
+                if (result.seoKeywords && result.seoKeywords.length > 0) {
+                    const seoContainer = document.getElementById('seo-keywords-container');
+                    if (seoContainer) {
+                        seoContainer.innerHTML = result.seoKeywords.map(keyword => `
+                            <a href="${keyword.url || '#'}" target="${keyword.link_target || '_self'}" class="keyword-tag">${keyword.keyword}</a>
+                        `).join('');
+                    }
+                }
+
+                // Load custom sections
+                if (result.customSections && result.customSections.length > 0) {
+                    const customContainer = document.getElementById('custom-sections-container');
+                    customContainer.innerHTML = result.customSections.map(section => `
+                        <section class="mb-14 md:mb-20 dynamic-section" data-section-id="${section.section_id}" ${section.visible === false ? 'style="display:none;"' : ''}>
+                            <div class="glassmorphism p-6 md:p-10">
+                                <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-4" id="${section.title_id}" data-editable="true">${section.title}</h2>
+                                <p class="text-gray-400 text-center mb-6 md:mb-8" id="${section.subtitle_id}" data-editable="true">${section.subtitle}</p>
+                                <div class="prose prose-invert max-w-4xl mx-auto text-gray-300" id="${section.content_id}" data-editable="true">
+                                    ${section.content}
+                                </div>
+                                ${section.button_text ? `
+                                    <div class="text-center mt-6">
+                                        <a href="${section.button_url || '#'}" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition" target="${section.button_target || '_self'}" id="${section.button_id}">
+                                            ${section.button_text}
+                                        </a>
+                                    </div>
+                                ` : ''}
+                            </div>
+                        </section>
+                    `).join('');
+                }
+
+                if (DEBUG) console.log('✅ All content loaded successfully');
+                showNotification('Welcome to Lucknow24Events!', 'success');
+
+            } catch (error) {
+                console.error('❌ Error loading content:', error);
+                showNotification('Error loading content', 'error');
+            } finally {
+                setLoading(false);
+            }
+        }
+
+        // Handle enquiry form
+        document.getElementById('quickEnquiryForm')?.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('enquiryName')?.value,
+                phone: document.getElementById('enquiryPhone')?.value,
+                email: document.getElementById('enquiryEmail')?.value,
+                event_type: document.getElementById('enquiryEvent')?.value,
+                event_date: document.getElementById('enquiryDate')?.value || null,
+                message: document.getElementById('enquiryMessage')?.value || ''
+            };
+
+            if (!formData.name || !formData.phone) {
+                showNotification('Please fill in all required fields', 'error');
+                return;
+            }
+
+            setLoading(true);
+            try {
+                const result = await callAPI('submit_enquiry', formData);
+                
+                if (result.success) {
+                    showNotification('Enquiry sent successfully! We\'ll contact you soon.', 'success');
+                    e.target.reset();
+                } else {
+                    throw new Error(result.error);
+                }
+            } catch (error) {
+                console.error('Error submitting enquiry:', error);
+                showNotification('Error sending enquiry. Please try again.', 'error');
+            } finally {
+                setLoading(false);
+            }
+        });
+
+        // Handle newsletter subscription
+        document.getElementById('newsletterForm')?.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const email = document.getElementById('newsletter-email')?.value;
+            if (!email) {
+                showNotification('Please enter your email', 'error');
+                return;
+            }
+
+            setLoading(true);
+            try {
+                const result = await callAPI('subscribe_newsletter', { email });
+                
+                if (result.success) {
+                    showNotification('Subscribed successfully!', 'success');
+                    document.getElementById('newsletter-email').value = '';
+                } else {
+                    if (result.error === 'already_exists') {
+                        showNotification('Email already subscribed!', 'info');
+                    } else {
+                        throw new Error(result.error);
+                    }
+                }
+            } catch (error) {
+                console.error('Error subscribing:', error);
+                showNotification('Error subscribing. Please try again.', 'error');
+            } finally {
+                setLoading(false);
+            }
+        });
+
+        // Mobile menu
+        document.getElementById('mobileMenuBtn')?.addEventListener('click', () => {
+            document.getElementById('mobileMenu')?.classList.toggle('hidden');
+        });
+
+        // Back to top
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                backToTop.classList.toggle('hidden', window.scrollY <= 300);
+            });
+            
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        // Close mobile menu on nav click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileMenu')?.classList.add('hidden');
+            });
+        });
+
+        // Slider controls
+        document.getElementById('prev-slide')?.addEventListener('click', prevSlide);
+        document.getElementById('next-slide')?.addEventListener('click', nextSlide);
+
+        // Lightbox functions
+        window.openLightbox = (src) => {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            if (lightbox && lightboxImg) {
+                lightboxImg.src = src;
+                lightbox.classList.remove('hidden');
+            }
+        };
+
+        window.closeLightbox = () => {
+            document.getElementById('lightbox')?.classList.add('hidden');
+        };
+
+        // Close lightbox on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        // Initialize everything
+        document.addEventListener('DOMContentLoaded', loadAllContent);
+    </script>
+</body>
+</html>
