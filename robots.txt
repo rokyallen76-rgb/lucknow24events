@@ -1,11 +1,193 @@
-# robots.txt for lucknow24events.com
+# robots.txt for Lucknow24Events Network
+# Main Domain: lucknow24events.com
+# Subdomains: gallery, booking, jobs, enquiry, support
+# Last Updated: March 1, 2026
 
+# ============================================
+# MASTER CONFIGURATION - ALL CRAWLERS
+# ============================================
 User-agent: *
 Allow: /
 
-# Sitemap
+# ============================================
+# MAIN DOMAIN - lucknow24events.com
+# ============================================
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /backup/
+Disallow: /includes/
+Disallow: /config/
+Disallow: /*.sql$
+Disallow: /*.log$
+Disallow: /*.bak$
+Disallow: /*.env$
+Disallow: /*.json$
+Crawl-delay: 2
+
+# ============================================
+# GALLERY SUBDOMAIN - High Priority for Images
+# ============================================
+User-agent: Googlebot-Image
+Allow: /$
+Allow: /weddings/
+Allow: /corporate/
+Allow: /birthdays/
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.jpeg$
+Disallow: /temp/
+Disallow: /thumbnails/
+
+User-agent: Googlebot
+Allow: /$
+Allow: /weddings/
+Allow: /corporate/
+Allow: /birthdays/
+Crawl-delay: 1
+
+# ============================================
+# BOOKING SUBDOMAIN - Transactional Pages
+# ============================================
+User-agent: *
+Allow: /$
+Allow: /wedding
+Allow: /corporate
+Allow: /birthday
+Allow: /packages/
+Disallow: /confirm
+Disallow: /payment
+Disallow: /success
+Disallow: /cancel
+Crawl-delay: 1
+
+# ============================================
+# JOBS SUBDOMAIN - Career Pages
+# ============================================
+User-agent: *
+Allow: /$
+Allow: /event-manager
+Allow: /wedding-coordinator
+Allow: /waiters
+Allow: /event-assistant
+Allow: /apply
+Disallow: /applications/
+Disallow: /resumes/
+Crawl-delay: 2
+
+# ============================================
+# ENQUIRY SUBDOMAIN - Lead Generation
+# ============================================
+User-agent: *
+Allow: /$
+Allow: /wedding
+Allow: /corporate
+Allow: /get-quote
+Disallow: /submit
+Disallow: /thank-you
+Crawl-delay: 1
+
+# ============================================
+# SUPPORT SUBDOMAIN - Help Center
+# ============================================
+User-agent: *
+Allow: /$
+Allow: /faq
+Allow: /help
+Allow: /contact
+Disallow: /tickets/
+Disallow: /chat/
+Crawl-delay: 3
+
+# ============================================
+# GOOGLE SPECIFIC OPTIMIZATIONS
+# ============================================
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-News
+Allow: /blog/
+Allow: /news/
+Crawl-delay: 2
+
+User-agent: Googlebot-Video
+Allow: /videos/
+Crawl-delay: 2
+
+# ============================================
+# BING/YAHOO OPTIMIZATIONS
+# ============================================
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 3
+
+# ============================================
+# SOCIAL MEDIA BOTS - Allow All
+# ============================================
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Pinterestbot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+# ============================================
+# BLOCK KNOWN BAD BOTS
+# ============================================
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MauiBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: Scrapy
+Disallow: /
+
+User-agent: Python-urllib
+Disallow: /
+
+# ============================================
+# SITEMAP LOCATIONS
+# ============================================
 Sitemap: https://lucknow24events.com/sitemap.xml
 
-# Disallow admin areas
-Disallow: /admin/
-Disallow: /assets/
+# ============================================
+# RATE LIMITING FOR ALL CRAWLERS
+# ============================================
+User-agent: *
+Crawl-delay: 2
+Request-rate: 1/2
+
+# End of robots.txt
